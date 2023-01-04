@@ -5,10 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+      a:hover {
+        color: white;
+        background: red;
+        transition: 0.5s;
+      }
+      a {
+        padding: 5px 10px;
+        color: black;
+        background: lightgray;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello Bangladesh</h1>
-    <h2>How are you</h2>
-    <h3>I add in the bew Branch</h3>
+    <nav>
+      <ul>
+        <li><a href="semantic.html">Semantic</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+    <button onclick="toggleLight()">Toggle Light</button>
+    <p>The light is <span id="light-status">off</span></p>
+    <audio
+      src="./assets//Video//mixkit-fast-rocket-whoosh-1714.wav"
+      controls
+    ></audio>
+    <video
+      src="./assets//Video//Alec Benjamin - Let Me Down Slowly [Official Music Video].mp4"
+      height="300px"
+      width="500px"
+      controls
+    ></video>
+    <iframe
+      width="460"
+      height="315"
+      src="https://www.youtube.com/embed/5aeYvyJ8VfA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="header">
+      <ul>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="blogs">
+      <div class="blog">
+        <h3>Blog one</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia
+          sunt culpa porro laborum. Nisi blanditiis fugit iste molestiae,
+          commodi enim totam facilis officia soluta nobis incidunt facere.
+          Consequatur, atque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          molestiae voluptatibus non pariatur blanditiis? Animi minima quasi
+          obcaecati deserunt cum!
+        </p>
+      </div>
+      <div class="blog">
+        <h3>Blog one</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia
+          sunt culpa porro laborum. Nisi blanditiis fugit iste molestiae,
+          commodi enim totam facilis officia soluta nobis incidunt facere.
+          Consequatur, atque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          molestiae voluptatibus non pariatur blanditiis? Animi minima quasi
+          obcaecati deserunt cum!
+        </p>
+      </div>
+      <div class="blog">
+        <h3>Blog one</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia
+          sunt culpa porro laborum. Nisi blanditiis fugit iste molestiae,
+          commodi enim totam facilis officia soluta nobis incidunt facere.
+          Consequatur, atque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          molestiae voluptatibus non pariatur blanditiis? Animi minima quasi
+          obcaecati deserunt cum!
+        </p>
+      </div>
+    </div>
+    <div class="photo-album"></div>
+    <div class="footer">
+      <p>Copyright of the year 2023</p>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
