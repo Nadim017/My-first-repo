@@ -5,6 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animation</title>
+    <style>
+      .main-div {
+        background: rgb(13, 144, 184);
+        height: 700px;
+        width: 700px;
+        margin: 0 auto;
+      }
+      .ball {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background: #000;
+        animation: sliding 3s linear 0s infinite alternate;
+        animation-play-state: running;
+        position: relative;
+      }
+      @keyframes sliding {
+        0% {
+          background: rgb(201, 18, 18);
+          left: 0;
+          top: 0;
+        }
+        25% {
+          top: 650px;
+          background: rgb(42, 14, 221);
+          transform: scale(0.5);
+        }
+        50% {
+          background: rgb(223, 8, 191);
+          top: 0;
+        }
+        75% {
+          top: 650px;
+          transform: scale(0.5);
+        }
+        100% {
+          background: rgb(14, 184, 59);
+          left: 650px;
+          top: 0;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="main-div">
+      <div class="ball"></div>
+    </div>
+  </body>
 </html>
