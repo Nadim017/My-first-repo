@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow-Practice</title>
+    <style>
+      .text-div {
+        height: 100px;
+        width: 250px;
+        border: 2px solid red;
+        margin: 100px auto;
+        overflow: hidden;
+      }
+      .text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-div">
+      <p
+        class="text"
+        title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+      veniam perspiciatis pariatur ducimus repellendus maxime dolores."
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        veniam perspiciatis pariatur ducimus repellendus maxime dolores.
+      </p>
+    </div>
+  </body>
+</html>
